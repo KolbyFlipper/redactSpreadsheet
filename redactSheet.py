@@ -48,7 +48,6 @@ for i in range(length):
 		FirstRow = True #to prevent overwriting headers
 		for row in reader:
 			if(FirstRow):
-				#print(row)
 				hasPHI = redactionSetup(row, inputList)
 				FirstRow = False
 				writer.writerow(row)
@@ -63,4 +62,3 @@ for i in range(length):
 
 		csvfile.close()
 		writeFile.close()
-#, fieldnames = ["OrigAppTransactionID"]
